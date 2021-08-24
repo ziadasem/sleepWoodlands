@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto|Roboto+Slab|Yellowtail&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+html{
+    background: #fff;
+    color: #555;
+    font-family: 'lato','Arial','sansirf';
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+.clearfix{zoom:1}
+.clearfix:after{
+    content: '.';
+    clear:both;
+    display:block;
+    height:0;
+    visibility: hidden;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+section{
+    padding: 80px 0;
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;  
+}
+header{
+    background-image:url(img/SSOW-Asleep-At-Work.png);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.logo{
+    height:80px;
+    width:auto;
+    float:left;
+    margin-top: 40px;
+}
+.main-navo{
+  float:right;
+  list-style: none;
+  margin-top: 70px;
+}
+.main-navo li{
+    display: inline-block;
+    margin-left:40px;
+    
+}
+.main-navo li a{
+       text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size:90%;
+    padding:8px 0;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; 
+}
+.main-navo li a:hover{
+    border-bottom: 2px solid #fcfeb5;
+}
+.hero-text-box {
+padding: 250px 20px;
+    text-align: center;
+    position: relative;
+}
+.header-txt{
+  font-size: 40px;
+  font-family: "Pacifico";
+  color: rgb(252, 254, 181);
+  line-height: 1.2;
+  
+}
+.txt-head{
+
+  font-size: 20px;
+  font-family: "Roboto Slab";
+  color: rgb(249, 249, 249);
+  font-weight: bold;
+  line-height: 1.2;
+    margin-top: 9px;
+  
+}
+.btn-head{
+  background-color: rgb(252, 254, 181);
+  width: 190px;
+  height: 42px;
+  padding: 7px;
+  border-radius: 15px;
+ text-decoration: none;
+  font-size: 22px;
+  font-family: "Pacifico";
+  color: rgb(3, 2, 2);
+  line-height: 1.2;
+  position: absolute;
+  left:43%;
+ top:400px;
+transition: .5s;
+
+}
+.btn-head:hover{
+    background-color: white;
+}
+.active{
+    border-bottom: 2px solid #fcfeb5;
+    padding-bottom: 7px;
+}
+h2{
+    font-weight: 300;
+    font-size: 180%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2:after{
+    display: block;
+    height:2px;
+    background-color:#dadd6e;
+    content:' ';
+    width: 100px;
+    margin:0 auto;
+    margin-top:30px;
+}
+.tit-contact:after{
+      display: block;
+    height:2px;
+    background-color:rgb(51, 110, 148);
+    content:' ';
+    width: 100px;
+    margin:0 auto;
+    margin-top:30px;
+}
+h3{
+    font-size:110%;
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.longcopy{
+  font-size:25px;
+  font-family: "Roboto Slab";
+  font-weight:400;
+  color: rgb(87, 87, 86);
+  line-height: 1.423;
+  text-align: left;
+ 
+
+}
+.about-img{
+    width:500px;
+    height: auto;
+    position: absolute;
+    top:-50px;
+   
+}
+.box{
+    position: relative;
+}
+.section-video{
+    background: #ffffff;
+    
+}
+.video-cont{
+    width:100%;
+    padding: 50px 50px;
+    margin: 0 auto;
+}
+.box-video{
+    justify-content: center;
+    text-align: center;
+    background: white;
+    height:100%;
+    transition: .5s;
+    
+}
+.box-video:hover{
+    cursor:pointer;
+    transform: scale(.98);
+}
+.sm-video{
+    padding: 10px 25px;
+    font-family: 'roboto';
+ 
+}
+.video-sec{
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.navigation{
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #dadd6e;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+    
+}
+.bar:hover{
+  background: #fcfeb5;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+  
+}
+.slide{
+  width: 20%;
+  transition: 0.6s;
+    
+}
+
+.slide img{
+  width: 85%;
+    border-radius:7px;
+    border:3px solid #fcfeb5;
+  
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r1:checked ~ .bar:first-child{
+ background:#fcfeb5; 
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+.small-cont{
+    width:80%;
+    margin: 0 auto;
+    
+}
+/*
+.s1{
+    animation: slide 4s infinite;
+}
+@keyframes slide{
+ 
+    50%{
+      margin-left: -20%;  
+    }
+    100%{
+      margin-left: -40%;
+    }
+}
+*/
+.section-contact{
+    background-image:url(img/contact.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment:;
+}
+.contact-up{
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.raw{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+}
+.icon{
+    padding-right: 15px;
+    color: #336e94;
+}
+.sm-tit-contact{
+  
+  text-transform: none;
+  font-family: "Pacifico";
+  color: rgb(51, 110, 148);
+  line-height: 1.2;
+  text-align: center;
+
+
+}
+.contact-box{
+    border-right:2px solid #336e94;
+}
+.contact-box:last-child{
+    border-right:none;
+}
+.tele-cont{
+
+  
+  font-family: "Roboto Slab";
+  color: rgb(80, 80, 76);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+ 
+
+}
+.sm-p{
+    font-size:18px;
+  font-family: 'Roboto Slab', ;
+    font-weight: 100;
+  color: rgb(250, 250, 248);
+  line-height: 1.2;
+  text-align: left;
+
+}
+footer{
+    background-color:#434340; 
+}
+.footer-up{
+    margin-top: 0px;
+}
+.foot-box{
+    justify-content: center;
+    position: relative;
+    padding: 70px;
+}
+.foot-tit{
+
+ text-transform: none;
+    font-size:30px;
+  font-family: "Yellowtail";
+  color: rgb(252, 254, 181);
+  line-height: 1.2;
+  text-align: left;
+}
+.btn-foot{
+    width:120px;
+    background: #fcfeb5;
+    height: 40px;
+    padding: 5px 20px;
+    color:#383835;
+    text-decoration: none;
+    font-family: "Pacifico";
+    border-radius: 12px;
+    text-align: center;
+    position: absolute;
+    top:260px;
+    left:190px;
+    transition: .5s;
+    
+}
+.btn-foot:hover{
+    background: white;
+}
+}
+.copyri{
+ color:white;
+}
+.copy{
+    color:white;
+    text-align: center;
+    font-size: 12px;
+}
